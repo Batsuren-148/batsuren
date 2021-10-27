@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+
+}
+header{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alice', serif;
+}
+.header-main{
+    background: url(background.jpg) no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alice', serif;
+}
+.menu ul{
+    padding: 10px 0;
+    margin: 0;
+    padding-top: 20px;
+}
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 17px;
+    padding: 0px 42px 12px;
+    border-bottom:  1px solid rgba(255,255,255,.3);
+}
+.menu ul li a{
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: #fff;
+}
+.menu li a:hover{
+    color: rgb(152, 243, 67);
+    transition: all 0.3s;
+}
+.menu .logo img{
+    width: 120px;
+    height: 70px;
+}
+.menu .logo-li{
+    
+    border: none;
+}
+
+    /*catscarf text */
+
+.container .cats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+    position: relative;
+    height: auto;
+}
+.cats ul{
+    width: auto;
+    height: auto;
+    padding: 0;
+}
+.cats ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 42px 12px;
+    text-align: center;
+    position: absolute;
+    left: 39%;
+}
+.cats ul li a{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.cats li a:hover{
+    color: rgb(152, 243, 67);
+}
+    /*2020 collection*/
+.container .collection{
+    color: #fff;
+    font-family: "Playfair Display SC", serif ;
+    text-align: center;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    width: 100%;
+}
+.collection h1{
+    width: 80%;
+    margin: 0px 10%;
+    font-weight: 400;
+    letter-spacing: 5px;   
+    border-bottom: 1px rgb(223, 217, 217) solid;
+    padding: 10px 50px;
+}
+.container .coming{
+    color: #fff;
+    font-family: 'Sacramento',sans-serif ;
+    text-align: center;
+    padding-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+    font-weight: 500;
+}
+.container .coming a{
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.container .coming a:hover{
+    color: rgb(152, 243, 67);
+}
+
+    /*main start here!*/
+
+.main{
+    width: 100%;
+    height: 800px;
+    display: inline-block;
+    position: relative;
+
+}
+main .main-header{
+    left: 0%;
+    text-align: center;
+    margin-top: 20px;
+}
+.main-header h1, h4, p{
+    width: 90%;
+    margin: 0px 5%;
+}
+main .main-header h1{
+    font-size: 75px;
+    font-weight: 500;
+    font-family: "Playfair Display SC", serif ;
+    border-bottom: 1px black solid;
+    letter-spacing: 5px;
+    padding: 0 30px;
+}
+.main-header h4{
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-family: 'Alice',serif ;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.main-header p{
+    font-size: 21px;
+    font-family: 'Alice',serif ;
+    padding-top: 30px;
+}
+
+    /* zurg*/
+
+.main .zurg{
+    display: inline-block;
+    width: 90%;
+    margin: 0px 5%;
+    margin-top: 4%;
+}
+.zurg ul{
+    padding: 0px;
+    width: 100%;
+}
+.main .zurg li{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: auto;
+    width: 30%;
+}
+.main .zurg li img{
+    width: 100%;
+    height: auto;
+    
+    padding: 0%;
+    text-align: center;
+    
+}
+    /*zurgnii hover*/
+
+.zurg li .product-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    max-height: 300px;
+    max-width: 300px;
+    position: absolute;
+    top: 16%;
+    right: 0;
+    left: 10%;
+    bottom: 0;
+    border-radius: 50%;
+    padding: 3em 3em 3.5em 2em;
+    overflow: hidden;
+    opacity: 0;
+}
+.zurg .product-overlay h1{
+    color: #fff;
+    text-align: center;
+}
+.zurg .product-overlay .the{
+    padding-right: 0;
+    padding-top: 15%;
+    padding-left: 3%;
+    font-size: 20px;
+    font-family: "Playfair Display SC", serif ;
+    font-weight: 600;
+}
+.zurg .product-overlay .clyde{
+    height: 50px;
+    width: 240px;
+    left: 0;
+    font-size: 35px;
+    border-bottom: #fff 1px solid;
+    font-family: "Playfair Display SC", serif ;
+    font-weight: 500;
+}
+.product-overlay b{
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+    font-weight: 500;
+    font-family: 'Sacramento',sans-serif ;
+    color: #fff;
+    text-decoration: none;
+}
+.product-overlay b:hover{
+    color: rgb(152, 243, 67);
+}
+@media screen and (max-width:1160px) and (min-width:800px) {
+    .zurg .product-overlay .clyde{
+        left: 0px;
+        border-bottom: #fff 1px solid;
+        width: 100%;
+    }
+    .zurg .product-overlay b{
+        left: 3px;
+    }
+}
+@media screen and (max-width:800px) {
+    .zurg .product-overlay .clyde{
+        font-size: 30px;
+        left: 0px;
+        border-bottom: #fff 1px solid;
+        width: 100%;
+    }
+    .zurg .product-overlay b{
+        font-size: 20px;
+        text-align: center;
+        left: 50px;
+        width: auto;
+    }
+}
+
+
+
+@media screen and (min-width:700px) {
+.zurg li .product-overlay:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    max-height: 300px;
+    max-width: 300px;
+    position: absolute;
+    top: 16%;
+    right: 0;
+    left: 12%;
+    bottom: 0;
+    border-radius: 50%;
+    padding: 3em 3em 3.5em 2em;
+    overflow: visible;
+    opacity: 1;
+}
+}
+
+
+
+        /*footer start here*/
+
+    
+footer .footer-main{
+    background-color: rgb(248, 234, 237);
+    width: 100%;
+    text-align: center;
+}
+.footer-header{
+    margin-top: 8%;
+    text-align: center;
+    display: inline-block;
+    margin-left: 0%;
+    width: 80%;
+
+}
+.footer-header h4{
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-family: 'Alice',serif ;
+    text-transform: uppercase;
+    padding-top: 10px;
+    width: 100%;
+}
+.footer-header h1{
+    display: inline-block;
+    font-size: 75px;
+    font-weight: 500;
+    font-family: "Playfair Display SC", serif ;
+    border-bottom: 1px black solid;
+    letter-spacing: 5px;
+    padding: 0 10%;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+.footer-header p{
+    display: inline-block;
+    width: 80%;
+    height: 69px;
+    font-size: 21px;
+    letter-spacing: 1px;
+    font-family: 'Alice',serif ;
+    margin-left: 0%;
+}
+
+    /*footer gif*/
+
+
+footer .gif-all{
+    margin:0px 5%;
+    width: 90%;
+    margin-top: 50px;
+    display: inline-block;
+    margin-bottom: 50px;
+
+}
+footer .gif{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    font: 18px ;
+    font-family: serif;
+    text-align: center;
+
+    margin-left: 2%;
+    margin-right: 2px;
+}
+footer .gif .gif-text h1{
+    width: 100%;
+    height: auto;
+    font: 36px;
+    font-family: "Playfair Display SC", serif;
+    color: #444;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px black solid;
+
+}
+footer .gif .gif-text p{
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+    height: auto;
+    font-family: 'Alice',serif ;
+    letter-spacing: 0.3px;
+    margin-top: 10px;
+}
+
+
+
+/*footer hesgiin photo*/
+
+footer .footer-fp{
+    background: url(footer-img.jpg) no-repeat;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+}
+footer .footer-fp2{
+    background: url(footer-img2.jpg) no-repeat;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+}
+
+
+/*footer yellw start here*/
+
+footer .part-yellow{
+    background-color: #dba539;
+    text-align: center;
+    height: auto;
+}
+.part-yellow .logo-footer{
+    padding-top: 60px;
+    
+}
+.part-yellow .logo-footer img{
+    width: 120px;
+    height: 80px;
+
+}
+.part-yellow .catscarf{
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-family: 'Alice',serif ;
+    text-transform: uppercase;
+    padding-top: 10px;
+    margin-bottom: 60px;
+    font-weight: 500;
+    color: #fff;
+    height: auto;
+    text-decoration: none;
+}
+.part-yellow .catscarf a{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+.part-yellow .catscarf a:hover{
+    color: rgb(152, 243, 67);
+}    
+
+/*social-links*/
+
+.social-links{
+    height: 40px;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 5%;
+}
+.social-links li{
+    display: inline-block;
+    text-align: center;
+    padding: 0 40px;
+    left: 30px;
+}
+.social-links li a{
+    width: 40px;
+    height: 40px;
+}
+.social-links li a i{
+    width: 40px;
+    height: 40px;
+}
+.social-links .bi::before{
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: #333;
+}
+
+.footer-h5{
+    color: #fff;
+    font: 21px;
+    font-family: "Playfair Display SC", serif;
+    
+}
+.footer-h5 h2{
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 50px;
+}
+.copyright{
+    width: auto;
+    height: 70px;
+    display: block;
+    background-color: #805f1e;
+    font-size: 18px;
+}
+footer .copyright h4{
+    color: #fff;
+    font: 22px;
+    font-family: "Playfair Display SC", serif;
+    letter-spacing: 3px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+.top-menu .tses{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    text-decoration: none;
+    display: none;
+}
+.tses li{
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    border-bottom: 1px #999 solid;
+}
+.tses a{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+#check{
+    display: none;
+}
+#check:checked ~.tses{
+    display: block;
+}
+.tses li a:hover{
+    color: rgb(152, 243, 67);
+}
+.buttn2 img{
+ width: 100px;
+ height: 60px;
+ object-fit: contain;
+}
+@media screen  and (max-width:1000px){
+    .menu{
+        display: none;
+    }
+    .container .cats{
+        display: none;
+    }
+    .container .collection{
+        padding-top: 80px;
+    }
+    .collection h1{
+        font-size: 67px;
+    }
+}
+@media screen and (min-width:1000px) {
+    .buttn2{
+        display: none;
+    }
+
+}
+@media screen and (max-width:700px){
+    .buttn2 img{
+        width: 60px;
+        height: 40px;
+    }
+    main .main-header h1{
+        font-size: 50px
+    }
+    .container .collection{
+        padding-top: 60px;
+    }
+    .collection h1{
+        font-size: 45px;
+    }
+    .container .coming a{
+        font-size: 50px;
+    }
+}
+@media screen  and (max-width:700px) {
+    .main .zurg li{
+        width: 100%;
+        display: block;
+        height: 700px;
+    }
+    .main .zurg li img{
+        width: 100%;
+        height: 450px;
+        object-fit: contain;
+    }
+}
+@media screen and (max-width:700px) {
+    .zurg li .product-overlay{
+        display: inline-block;
+        position: relative;
+        overflow: visible;
+        opacity: 1;
+        top: 0px;
+        left: 0px;
+        border: none;
+        border-radius: 0%;
+        color: red;
+        width: 100%;
+        height: 150px;
+        padding: 0px;
+        max-width: 100%;
+        min-width: 100%;
+        text-align: center;
+        background-color: white;
+    }
+    .zurg li .product-overlay .the{
+        padding: 0px;
+        background-color: white;
+    }
+    .zurg li .product-overlay .the{
+        color: black;
+    }
+    .zurg li .product-overlay .clyde{
+        color: black;
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        font-size: 40px;
+        border-bottom: 1px rgba(90, 84, 84, 0.605) solid;
+        padding-bottom: 10px;
+    }
+    .zurg li .product-overlay b{
+        color: black;
+        left: 0px;
+        width: 100%;
+        top: 0px;
+        font-size: 35px;
+        height: auto;
+        position: relative;
+        margin-bottom: 80px;
+    }
+    .zurg li .product-overlay b:hover{
+        color: rgb(152, 243, 67);
+    }
+    .main-header h4{
+        margin-top: 150px;
+    }
+    footer .footer-fp{
+        margin-top: 120px;
+    }
+    footer .gif{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 50px 0px;
+    }
+    footer .gif .gif-text p{
+        font-size: 18px;
+    }
+    .footer-h5 h2{
+        font-size: 18px;
+    }
+}
